@@ -50,7 +50,7 @@ class Aluno(AbstractUser):
     class Meta:
         verbose_name = "Aluno"
         verbose_name_plural = "Alunos"
-        db_table = 'alunos'
+        db_table = 'alunos_cosme_rodrigues'
 
     def __str__(self):
         return self.full_name
