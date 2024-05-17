@@ -40,3 +40,16 @@ class CustomAlunoAdmin(UserAdmin):
             )
         }),
     )
+
+    def activate_users(self, request, queryset):
+        queryset.update(is_active=True)
+
+    activate_users.short_description = "Ativar Usuários"
+
+    def deactivate_users(self, request, queryset):
+        queryset.update(is_active=False)
+
+    deactivate_users.short_description = "Desativar Usuários"
+
+
+admin.site.register(Aluno, CustomAlunoAdmin)
