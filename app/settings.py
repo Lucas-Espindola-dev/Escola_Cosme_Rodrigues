@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'alunos',
 ]
 
+AUTH_USER_MODEL = 'alunos.Aluno'
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
