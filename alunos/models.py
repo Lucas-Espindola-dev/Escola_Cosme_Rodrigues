@@ -43,3 +43,14 @@ class Aluno(AbstractUser):
         default=False,
         help_text="Marque essa opção para conceder todos os privilégios, sem a necessidade de permissões."
     )
+
+    REQUIRED_FIELDS = ['email', 'full_name']
+    USERNAME_FIELD = 'username'
+
+    class Meta:
+        verbose_name = "Aluno"
+        verbose_name_plural = "Alunos"
+        db_table = 'alunos'
+
+    def __str__(self):
+        return self.full_name
