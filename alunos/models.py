@@ -27,3 +27,19 @@ class Aluno(AbstractUser):
     telefone = models.IntegerField(verbose_name='Telefone', unique=True, blank=True, null=True)
     mother_name = models.CharField(verbose_name='Nome da mãe', max_length=255, blank=True, null=True)
     father_name = models.CharField(verbose_name='Nome da pai', max_length=255, blank=True, null=True)
+
+    is_active = models.BooleanField(
+        verbose_name='Ativo',
+        default=True,
+        help_text='Desmarque essa opção para desativar o usuário e impedir o login.',
+    )
+    is_staff = models.BooleanField(
+        verbose_name="Admin",
+        default=False,
+        help_text="Marque essa opção para conceder acesso a área administrativa.",
+    )
+    is_superuser = models.BooleanField(
+        verbose_name="Superusuário",
+        default=False,
+        help_text="Marque essa opção para conceder todos os privilégios, sem a necessidade de permissões."
+    )
