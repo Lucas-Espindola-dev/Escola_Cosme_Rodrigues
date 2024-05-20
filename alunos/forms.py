@@ -8,9 +8,9 @@ class AlunoCreationForm(forms.ModelForm):
 
     class Meta:
         model = Aluno
-    fields = ('username', 'email', 'full_name',
-              'matricula', 'seduc', 'cpf', 'serie',
-              'telefone', 'mother_name', 'father_name',)
+        fields = ['username', 'email', 'full_name',
+                  'matricula', 'seduc', 'cpf', 'serie',
+                  'telefone', 'mother_name', 'father_name']
 
     def clean_password2(self):
         password1 = self.cleaned_data.get('password1')
