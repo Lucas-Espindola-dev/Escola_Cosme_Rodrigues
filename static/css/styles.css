@@ -1,7 +1,7 @@
 *{
 padding:0;
 margin:0;
-box-sizing:0;
+box-sizing: border-box;
 }
 
 html{
@@ -9,7 +9,8 @@ font-size:62.5%
 }
 
 body{
-background: linear-gradient(white,gray);
+background-image: url("background_cosme_paisagem_compact.jpg");
+background-size: auto;
 color: #000000;
 font-family:Georgia, serif;
 }
