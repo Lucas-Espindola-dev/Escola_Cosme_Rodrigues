@@ -9,7 +9,8 @@ font-size:62.5%
 }
 
 body{
-background: linear-gradient(white,gray);
+background: rgb(2,0,36);
+background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,155,255,1) 0%, rgba(255,255,255,1) 18%);
 background-size: auto;
 color: #000000;
 font-family:Georgia, serif;
