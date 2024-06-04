@@ -25,3 +25,9 @@ class AlunoCreationForm(forms.ModelForm):
         if commit:
             user.save()
         return user
+
+
+class AlunoLoginForm(forms.Form):
+    user = forms.CharField()
+    password = forms.CharField(widget=forms.PasswordInput)
+
