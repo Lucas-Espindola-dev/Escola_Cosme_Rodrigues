@@ -1,6 +1,7 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 from django.views import View
-from .forms import AlunoCreationForm
+from .forms import AlunoCreationForm, AlunoLoginForm
+from django.contrib.auth.views import LoginView
 
 
 def home(request):
@@ -15,5 +16,10 @@ class AlunoRegisterView(View):
     def get(self, request, *args, **kwargs):
         form = self.form_class(initial=self.initial)
         return render(request, self.template_name, {'form': form})
+
+
+class AlunoLoginView(LoginView):
+    form_class = AlunoCreationForm
+    template_name = 'pages/login.html'
 
 
