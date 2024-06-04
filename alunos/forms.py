@@ -1,4 +1,5 @@
 from django import forms
+from django.contrib.auth import authenticate
 from .models import Aluno
 
 
@@ -28,6 +29,14 @@ class AlunoCreationForm(forms.ModelForm):
 
 
 class AlunoLoginForm(forms.Form):
-    user = forms.CharField()
+    username = forms.CharField()
     password = forms.CharField(widget=forms.PasswordInput)
 
+    def clean(self):
+        username = self.cleaned_data.get('username')
+        password = self.cleaned_data.get('password')
+        if username and password:
+            user = authenticate(username=username, password=password)
+            if not user:
+                raise forms.ValidationError('Login Inválido')
+        return super().clean()
