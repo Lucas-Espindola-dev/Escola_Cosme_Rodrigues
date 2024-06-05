@@ -18,6 +18,9 @@ class AlunoRegisterView(View):
         form = self.form_class(initial=self.initial)
         return render(request, self.template_name, {'form': form})
 
+    def post(self, request, *args, **kwargs):
+        form = self.form_class(request.POST)
+
 
 class AlunoLoginView(LoginView):
     form_class = AuthenticationForm
