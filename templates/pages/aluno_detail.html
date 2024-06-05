@@ -1,10 +1,12 @@
 {% extends 'pages/base.html' %}
 
 {% block content %}
-    <h2>Detalhes do Aluno</h2>
-    <p><strong>Nome:</strong> {{ aluno.username }}</p>
-    <p><strong>Matrícula:</strong> {{ aluno.matricula }}</p>
-    <p><strong>CPF:</strong> {{ aluno.cpf }}</p>
-    <p><strong>Email:</strong> {{ aluno.email }}</p>
-    <p><strong>Senha SEDUC:</strong> {{ aluno.seduc }}</p>
+    <div class="aluno-detail">
+        <h2>Detalhes do Aluno</h2>
+        <p><strong>Nome:</strong> {{ aluno.username }}</p>
+        <p><strong>Matrícula:</strong> {{ aluno.matricula }}</p>
+        <p><strong>CPF:</strong> {{ aluno.cpf }}</p>
+        <p><strong>Email:</strong> {{ aluno.email }}</p>
+        <p><strong>Senha SEDUC:</strong> {{ aluno.seduc }}</p>
+    </div>
 {% endblock %}
