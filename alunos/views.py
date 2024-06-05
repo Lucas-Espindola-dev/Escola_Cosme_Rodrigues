@@ -1,9 +1,12 @@
 from django.shortcuts import render, redirect
+from django.shortcuts import get_object_or_404
 from django.views import View
 from .forms import AlunoCreationForm
 from django.contrib.auth import authenticate
 from django.contrib.auth.views import LoginView
 from django.contrib.auth.forms import AuthenticationForm
+from django.views.generic import DetailView
+from .models import Aluno
 
 
 def home(request):
@@ -35,3 +38,10 @@ class AlunoLoginView(LoginView):
     template_name = 'pages/login.html'
 
 
+class AlunoDetailView(DetailView):
+    model = Aluno
+    template_name = 'aluno_detail.html'
+    context_object_name = 'aluno'
+
+    def get_object(self, queryset=None):
+        return get_object_or_404(Aluno, pk=self.request.user.pk)
