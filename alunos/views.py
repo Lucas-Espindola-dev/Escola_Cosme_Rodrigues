@@ -45,7 +45,7 @@ class AlunoLoginView(LoginView):
 
 class AlunoDetailView(LoginRequiredMixin, DetailView):
     model = Aluno
-    template_name = 'aluno_detail.html'
+    template_name = 'pages/aluno_detail.html'
     context_object_name = 'aluno'
 
     def get_object(self, queryset=None):
