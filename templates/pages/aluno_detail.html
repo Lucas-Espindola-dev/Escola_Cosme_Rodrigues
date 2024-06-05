@@ -3,10 +3,15 @@
 {% block content %}
     <div class="aluno-detail">
         <h2>Detalhes do Aluno</h2>
-        <p><strong>Nome:</strong> {{ aluno.username }}</p>
+        <p><strong>Usuário:</strong> {{ aluno.username }}</p>
+        <p><strong>Nome Completo:</strong> {{ aluno.full_name }}</p>
         <p><strong>Matrícula:</strong> {{ aluno.matricula }}</p>
-        <p><strong>CPF:</strong> {{ aluno.cpf }}</p>
         <p><strong>Email:</strong> {{ aluno.email }}</p>
         <p><strong>Senha SEDUC:</strong> {{ aluno.seduc }}</p>
+        <p><strong>CPF:</strong> {{ aluno.cpf }}</p>
+        <p><strong>Série:</strong> {{ aluno.serie }}</p>
+        <p><strong>Telefone:</strong> {{ aluno.telefone }}</p>
+        <p><strong>Nome da Mãe:</strong> {{ aluno.mother_name }}</p>
+        <p><strong>Nome do Pai:</strong> {{ aluno.father_name }}</p>
     </div>
 {% endblock %}
