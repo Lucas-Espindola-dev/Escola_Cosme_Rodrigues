@@ -10,5 +10,5 @@ urlpatterns = [
     path('register/', AlunoRegisterView.as_view(), name='register'),
     path('login/', AlunoLoginView.as_view(), name='login'),
     path('logout/', LogoutView.as_view(next_page='login'), name='logout'),
-    path('aluno/<int:pk>/', AlunoDetailView.as_view(), name='aluno_detail'),
+    path('aluno/', AlunoDetailView.as_view(), name='aluno_detail'),
 ]
