@@ -71,5 +71,14 @@ font-family:Georgia, serif;
 
 .login-form h2{
     font-size: 50px;
-
 }
+
+.aluno-detail{
+    font-size: 30px;
+}
+
+.aluno-detail h2{
+    font-size: 50px;
+    text-align: center;
+}
+
