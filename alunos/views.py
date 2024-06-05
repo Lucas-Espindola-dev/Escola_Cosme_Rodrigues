@@ -1,3 +1,4 @@
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 from django.shortcuts import get_object_or_404
@@ -42,7 +43,7 @@ class AlunoLoginView(LoginView):
         return reverse_lazy('aluno_detail')
 
 
-class AlunoDetailView(DetailView):
+class AlunoDetailView(LoginRequiredMixin, DetailView):
     model = Aluno
     template_name = 'aluno_detail.html'
     context_object_name = 'aluno'
