@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.urls import reverse_lazy
 from django.shortcuts import get_object_or_404
 from django.views import View
 from .forms import AlunoCreationForm
@@ -36,6 +37,9 @@ class AlunoRegisterView(View):
 class AlunoLoginView(LoginView):
     form_class = AuthenticationForm
     template_name = 'pages/login.html'
+
+    def get_success_url(self):
+        return reverse_lazy('aluno_detail')
 
 
 class AlunoDetailView(DetailView):
