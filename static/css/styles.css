@@ -34,6 +34,14 @@ font-family:Georgia, serif;
     overflow: hidden;
 }
 
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
 .main-title h1{
     font-size: 40px;
     text-align: center;
