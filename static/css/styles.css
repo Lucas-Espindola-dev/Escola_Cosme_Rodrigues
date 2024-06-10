@@ -112,3 +112,13 @@ font-family:Georgia, serif;
     padding:10px;
 }
 
+footer {
+     background-color: #ccc;
+     color: #333;
+     padding: 25px;
+     text-align: center;
+}
+
+footer p{
+    font-size: 15px;
+}
