@@ -12,13 +12,15 @@
     </div>
         <nav class="navbar">
             <ul>
-                <li><a>Home</a></li>
-                <li><a>Cadastrar</a></li>
-                <li><a>Login</a></li>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'register' %}">Cadastrar</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li>
             </ul>
         </nav>
     {% block content %}
 
     {% endblock %}
+
+
 </body>
 </html>
