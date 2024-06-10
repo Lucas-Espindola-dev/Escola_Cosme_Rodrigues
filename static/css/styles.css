@@ -26,6 +26,14 @@ font-family:Georgia, serif;
     padding: 3rem;
 }
 
+.navbar ul{
+    list-style-type: none;
+    background-color: gray;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
 .main-title h1{
     font-size: 40px;
     text-align: center;
