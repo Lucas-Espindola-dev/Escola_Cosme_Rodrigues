@@ -30,7 +30,7 @@ font-size: 10px;
 }
 
 nav{
-    background-color: rgb(83, 83, 245);
+    background-color: rgb(255, 255, 255);
     color: black;
     height: 50px;
     display: flex;
@@ -102,12 +102,25 @@ nav ul li a {
     font-size: 15px;
 }
 
+.valores {
+    padding-bottom: 15px;
+}
+
 .valores h2{
     font-size: 25px;
 }
 
 .valores ul{
     font-size: 15px;
+    padding: 10px;
+}
+
+.valores li {
+    padding-bottom: 5px;
+}
+
+.nossa_estrutura {
+    padding-bottom: 15px;
 }
 
 .nossa_estrutura h2{
@@ -118,6 +131,10 @@ nav ul li a {
     font-size: 15px;
 }
 
+.corpo_docente {
+    padding-bottom: 15px;
+}
+
 .corpo_docente h2{
     font-size: 25px;
 }
@@ -126,12 +143,20 @@ nav ul li a {
     font-size: 15px;
 }
 
+.programas_projetos {
+    padding-bottom: 15px;
+}
+
 .programas_projetos h2{
     font-size: 25px;
 }
 
 .programas_projetos p{
     font-size: 15px;
+}
+
+.conecte {
+    padding-bottom: 15px;
 }
 
 .conecte h2{
