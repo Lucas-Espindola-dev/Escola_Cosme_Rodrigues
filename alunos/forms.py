@@ -4,12 +4,12 @@ from .models import Aluno
 
 
 class AlunoCreationForm(forms.ModelForm):
-    password1 = forms.CharField(label='Password', widget=forms.PasswordInput)
-    password2 = forms.CharField(label='Password confirmation', widget=forms.PasswordInput)
+    password1 = forms.CharField(label='Senha', widget=forms.PasswordInput)
+    password2 = forms.CharField(label='Confirmação da senha', widget=forms.PasswordInput)
 
     class Meta:
         model = Aluno
-        fields = ['username', 'email', 'full_name',
+        fields = ['username', 'password1', 'password2', 'email', 'full_name',
                   'matricula', 'seduc', 'cpf', 'serie',
                   'telefone', 'mother_name', 'father_name']
 
