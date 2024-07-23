@@ -10,13 +10,16 @@ font-size:62.5%
 
 body{
 background: rgb(2,0,36);
-background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,155,255,1) 0%, rgba(255,255,255,1) 18%);
+background: linear-gradient(180deg, rgb(12, 3, 184) 0%, rgb(4, 116, 190) 0%, rgba(255,255,255,1) 18%);
 background-size: auto;
-color: #000000;
-font-family:Georgia, serif;
+color: #333;
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+padding: 0;
+font-size: 10px;
 }
 
-.main-content{
+.main_content{
     padding-top:0;
 }
 
@@ -26,29 +29,34 @@ font-family:Georgia, serif;
     padding: 3rem;
 }
 
-.navbar ul{
-    font-size: 20px;
-    list-style-type: none;
-    background-color: gray;
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
+nav{
+    background-color: rgb(83, 83, 245);
+    color: black;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.navbar a{
-    color: white;
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
     text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
     padding: 15px;
-    display: block;
-    text-align: center;
-}
-
-.navbar a:hover{
-    background-color: hsl(0, 0%, 10%);
-}
-
-.navbar li{
-    float: left;
+    transition: all 0.3s ease;
 }
 
 .main-title h1{
@@ -56,6 +64,10 @@ font-family:Georgia, serif;
     text-align: center;
     padding-top: 3rem;
     padding-bottom: 1rem;
+}
+
+.sobre_nos{
+    
 }
 
 .form-register h2{
