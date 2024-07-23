@@ -12,7 +12,7 @@ body{
 background: rgb(2,0,36);
 background: linear-gradient(180deg, rgb(12, 3, 184) 0%, rgb(4, 116, 190) 0%, rgba(255,255,255,1) 18%);
 background-size: auto;
-color: #333;
+color: #000000;
 font-family: Arial, Helvetica, sans-serif;
 margin: 0;
 padding: 0;
@@ -66,8 +66,80 @@ nav ul li a {
     padding-bottom: 1rem;
 }
 
-.sobre_nos{
-    
+.sobre_nos {
+    padding-bottom: 15px;
+}
+
+.sobre_nos h2{
+    font-size: 25px;
+}
+
+.sobre_nos p{
+    font-size: 15px;
+}
+
+.nossa_missao {
+    padding-bottom: 15px;
+}
+
+.nossa_missao h2{
+    font-size: 25px;
+}
+
+.nossa_missao p{
+    font-size: 15px;
+}
+
+.visao {
+    padding-bottom: 15px;
+}
+
+.visao h2{
+    font-size: 25px;
+}
+
+.visao p{
+    font-size: 15px;
+}
+
+.valores h2{
+    font-size: 25px;
+}
+
+.valores ul{
+    font-size: 15px;
+}
+
+.nossa_estrutura h2{
+    font-size: 25px;
+}
+
+.nossa_estrutura p{
+    font-size: 15px;
+}
+
+.corpo_docente h2{
+    font-size: 25px;
+}
+
+.corpo_docente p{
+    font-size: 15px;
+}
+
+.programas_projetos h2{
+    font-size: 25px;
+}
+
+.programas_projetos p{
+    font-size: 15px;
+}
+
+.conecte h2{
+    font-size: 25px;
+}
+
+.conecte p{
+    font-size: 15px;
 }
 
 .form-register h2{
