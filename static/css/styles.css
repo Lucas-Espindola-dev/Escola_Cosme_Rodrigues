@@ -67,7 +67,7 @@ nav ul li a {
 }
 
 .sobre_nos {
-    padding-bottom: 15px;
+    padding: 10px;
 }
 
 .sobre_nos h2{
@@ -79,7 +79,7 @@ nav ul li a {
 }
 
 .nossa_missao {
-    padding-bottom: 15px;
+    padding: 10px;
 }
 
 .nossa_missao h2{
@@ -91,7 +91,7 @@ nav ul li a {
 }
 
 .visao {
-    padding-bottom: 15px;
+    padding: 10px;
 }
 
 .visao h2{
@@ -103,7 +103,7 @@ nav ul li a {
 }
 
 .valores {
-    padding-bottom: 15px;
+    padding: 10px;
 }
 
 .valores h2{
@@ -116,11 +116,11 @@ nav ul li a {
 }
 
 .valores li {
-    padding-bottom: 5px;
+    padding: 5px;
 }
 
 .nossa_estrutura {
-    padding-bottom: 15px;
+    padding: 10px;
 }
 
 .nossa_estrutura h2{
@@ -132,7 +132,7 @@ nav ul li a {
 }
 
 .corpo_docente {
-    padding-bottom: 15px;
+    padding: 10px;
 }
 
 .corpo_docente h2{
@@ -144,7 +144,7 @@ nav ul li a {
 }
 
 .programas_projetos {
-    padding-bottom: 15px;
+    padding: 10px;
 }
 
 .programas_projetos h2{
@@ -156,7 +156,7 @@ nav ul li a {
 }
 
 .conecte {
-    padding-bottom: 15px;
+    padding: 10px;
 }
 
 .conecte h2{
