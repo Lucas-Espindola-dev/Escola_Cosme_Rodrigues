@@ -29,6 +29,10 @@ font-size: 10px;
     padding: 3rem;
 }
 
+label {
+    font-size: large;
+}
+
 nav{
     background-color: rgb(255, 255, 255);
     color: black;
@@ -218,19 +222,6 @@ nav ul li a {
     margin: 12px 0;
 }
 
-.login-form{
-    font-size: 35px;
-    padding-top: 200px;
-    padding-right: 60px;
-    padding-bottom: 100px;
-    padding-left: 120px;
-    margin: 25px 50px 75px 100px;
-}
-
-.login-form h2{
-    font-size: 50px;
-}
-
 .aluno-detail{
     font-size: 30px;
 }
@@ -254,3 +245,4 @@ footer {
 footer p{
     font-size: 15px;
 }
+
