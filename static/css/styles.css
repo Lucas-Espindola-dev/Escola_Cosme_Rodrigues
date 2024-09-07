@@ -9,8 +9,7 @@ font-size:62.5%
 }
 
 body{
-background: rgb(2,0,36);
-background: linear-gradient(180deg, rgb(12, 3, 184) 0%, rgb(4, 116, 190) 0%, rgba(255,255,255,1) 18%);
+background: whitesmoke;
 background-size: auto;
 color: #000000;
 font-family: Arial, Helvetica, sans-serif;
@@ -34,8 +33,8 @@ label {
 }
 
 nav{
-    background-color: rgb(255, 255, 255);
-    color: black;
+    background-color: rgb(0, 44, 187);
+    color: white;
     height: 50px;
     display: flex;
     justify-content: space-between;
@@ -47,6 +46,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
+    margin-left: 15px;
 }
 
 nav ul li {
@@ -56,11 +56,12 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: black;
-    font-size: 16px;
+    color: white;
+    font-size: 20px;
     font-weight: bold;
     padding: 15px;
     transition: all 0.3s ease;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .main-title h1{
