@@ -231,18 +231,21 @@ nav ul li a {
     margin: 12px 0;
 }
 
-.aluno-detail{
-    font-size: 30px;
+.aluno-detail {
+    margin: 20px auto;
+    width: 60%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.aluno-detail h2{
-    font-size: 50px;
-    text-align: center;
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-.aluno-detail p{
-    padding:10px;
-}
+
 
 footer {
      background-color: #ccc;
