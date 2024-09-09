@@ -1,17 +1,49 @@
 {% extends 'pages/base.html' %}
 
 {% block content %}
-    <div class="aluno-detail">
-        <h2>Detalhes do Aluno</h2>
-        <p><strong>Usuário:</strong> {{ aluno.username }}</p>
-        <p><strong>Nome Completo:</strong> {{ aluno.full_name }}</p>
-        <p><strong>Matrícula:</strong> {{ aluno.matricula }}</p>
-        <p><strong>Email:</strong> {{ aluno.email }}</p>
-        <p><strong>Senha SEDUC:</strong> {{ aluno.seduc }}</p>
-        <p><strong>CPF:</strong> {{ aluno.cpf }}</p>
-        <p><strong>Série:</strong> {{ aluno.serie }}° ano</p>
-        <p><strong>Telefone:</strong> {{ aluno.telefone }}</p>
-        <p><strong>Nome da Mãe:</strong> {{ aluno.mother_name }}</p>
-        <p><strong>Nome do Pai:</strong> {{ aluno.father_name }}</p>
-    </div>
+<div class="aluno-detail">
+    <h2>Detalhes do Aluno</h2>
+    <table>
+        <tr>
+            <th>Usuário</th>
+            <td>{{ aluno.username }}</td>
+        </tr>
+        <tr>
+            <th>Nome Completo</th>
+            <td>{{ aluno.full_name }}</td>
+        </tr>
+        <tr>
+            <th>Matrícula</th>
+            <td>{{ aluno.matricula }}</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>{{ aluno.email }}</td>
+        </tr>
+        <tr>
+            <th>Senha SEDUC</th>
+            <td>{{ aluno.seduc }}</td>
+        </tr>
+        <tr>
+            <th>CPF</th>
+            <td>{{ aluno.cpf }}</td>
+        </tr>
+        <tr>
+            <th>Série</th>
+            <td>{{ aluno.serie }}° ano</td>
+        </tr>
+        <tr>
+            <th>Telefone</th>
+            <td>{{ aluno.telefone }}</td>
+        </tr>
+        <tr>
+            <th>Nome da Mãe</th>
+            <td>{{ aluno.mother_name }}</td>
+        </tr>
+        <tr>
+            <th>Nome do Pai</th>
+            <td>{{ aluno.father_name }}</td>
+        </tr>
+    </table>
+</div>
 {% endblock %}
