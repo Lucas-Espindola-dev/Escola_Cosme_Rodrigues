@@ -65,12 +65,12 @@ nav ul li a {
 }
 
 .main-title h1{
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
     text-align: center;
     padding-top: 3rem;
-    padding-bottom: 1rem;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    padding-bottom: 3rem;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .sobre_nos {
