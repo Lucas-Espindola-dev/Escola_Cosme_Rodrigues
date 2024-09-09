@@ -245,7 +245,20 @@ table {
     border-collapse: collapse;
 }
 
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
 
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+td {
+    color: #555;
+}
 
 footer {
      background-color: #ccc;
